@@ -1,14 +1,262 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CrystalmuseumCn</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <meta charset="utf-8">
+  <title>水晶精品，水晶博物馆，水晶展销网</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
 
-<%= yield %>
+  <header id="header" class="hidden-xs">
+    <div class="container">
+          <div id="header-title">
+            <h1 class="animated fadeInDown"><a href="http://razonartificial.com/themes/openmind/wordpress"><span>水晶精品</span></a></h1>
+            <p class="animated fadeInLeft">东海水晶甲天下</p>
+          </div>
+          <div id="search-header" class="hidden-xs animated fadeInRight">
+            <form class="navbar-search" method="get" action="#">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="请输入关键词搜索" name="s" id="s">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                    </span>
+                </div>
+            </form>
+          </div>
+          <div id="toplogo-header"><img src="/assets/top-pic1.jpg"></div>
+      </div>
+  </header>
+
+
+  <nav class="navbar navbar-static-top navbar-mind" role="navigation">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <a class="navbar-brand visible-xs" href="index.html"><span>水晶精品</span></a>
+              <button class="navbar-toggle btn btn-primary" data-toggle="collapse" data-target=".navbar-mind-collapse"><i class="fa fa-bars fa-inverse"></i><span class="sr-only"> 菜单</span></button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-mind-collapse">
+              <ul id="menu-mainmenu" class="nav navbar-nav">
+                <li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-24 dropdown">
+                  <a title="Home" href="#" data-toggle="dropdown" class="dropdown-toggle">首页</a>
+                </li>
+                <li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27 dropdown"><a title="UI Elements" href="#" data-toggle="dropdown" class="dropdown-toggle">翡翠频道<span class="caret"></span></a>
+                <ul role="menu" class=" dropdown-menu">
+                  <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a title="CSS" href="http://razonartificial.com/themes/openmind/wordpress/css/">翡翠手镯</a></li>
+                  <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a title="Components" href="http://razonartificial.com/themes/openmind/wordpress/components/">翡翠首饰</a></li>
+                  <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="Additional Components" href="http://razonartificial.com/themes/openmind/wordpress/additional-components/">翡翠挂件</a></li>
+                </ul>
+                </li>
+                <li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25 dropdown"><a title="Pages" href="#" data-toggle="dropdown" class="dropdown-toggle">雕刻师</a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">登录</a>
+                      <div class="dropdown-menu dropdown-login animated fadeInUp">
+                          <form role="form" name="loginform" id="loginform" action="#" method="post">
+                              <div class="form-group">
+                                  <div class="input-group login-input">
+                                      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                      <input type="text" class="form-control" placeholder="用户名" name="log" id="user_login">
+                                  </div>
+                                  <br>
+                                  <div class="input-group login-input">
+                                      <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                      <input type="password" class="form-control" placeholder="密码" name="pwd" id="user_pass">
+                                  </div>
+                                  <div class="checkbox">
+                                      <label>
+                                          <input type="checkbox" name="rememberme" id="rememberme" value="forever" tabindex="90"> 自动登录
+                                      </label>
+                                  </div>
+                                  <input type="hidden" name="redirect_to" value="http://razonartificial.com/themes/openmind/wordpress">
+                                  <input type="hidden" name="testcookie" value="1">
+                                  <button class="btn btn-success" name="wp-submit" id="wp-submit">立即注册</button>
+                                  <button class="btn btn-primary" name="wp-submit" id="wp-submit">登录</button>
+                                  <div class="clearfix"></div>
+                              </div>
+                          </form>
+                      </div>
+                                  </li> <!-- dropdown -->
+              </ul> <!-- nav nabvar-nav -->
+          </div><!-- navbar-collapse -->
+      </div> <!-- container -->
+  </nav>
+
+
+        <section>
+            <div id="carousel-example-generic" class="carousel carousel-mind slide" data-ride="carousel" data-interval="5000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-7">
+                                    <div class="carousel-caption">
+                                        <div class="carousel-text">
+                                           <h1 class="animated fadeInDownBig">The template that adapts to all projects</h1>
+                                           <ul class="list-unstyled carousel-list">
+                                               <li class="animated bounceInLeft"><i class="fa fa-code"></i><span>Built with Bootstrap</span></li>
+                                               <li class="animated bounceInLeft"><i class="fa fa-html5"></i><span>HTML5 and CSS3</span></li>
+                                               <li class="animated bounceInLeft"><i class="fa fa-table"></i><span>Responsive Template</span></li>
+                                           </ul>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-5 hidden-xs carousel-img-wrap">
+                                    <div class="carousel-img">
+                                        <img src="/assets/pre.png" alt="pre" width="960" height="518" class="aligncenter size-full wp-image-72 img-responsive animated bounceInUp">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-8">
+                                    <div class="carousel-caption">
+                                        <div class="carousel-text">
+                                           <h1 class="animated fadeInDownBig">design your own template very easily</h1>
+                                           <ul class="list-unstyled carousel-list">
+                                               <li class="animated bounceInLeft"><i class="fa fa-eye"></i><span>More Than 15 Colors</span></li>
+                                               <li class="animated bounceInLeft"><i class="fa fa-th-large"></i><span>Customizable Components</span></li>
+                                               <li class="animated bounceInLeft"><i class="fa fa-files-o"></i><span>Over 25 pages ready to use</span></li>
+                                           </ul>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-4 hidden-xs carousel-img-wrap">
+                                    <div class="carousel-img">
+                                        <img src="/assets/pre2.png" alt="pre" class="aligncenter size-full wp-image-72 img-responsive animated bounceInUp">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-7 col-sm-9">
+                                    <div class="carousel-caption">
+                                        <div class="carousel-text">
+                                           <h1 class="animated fadeInDownBig">WordPress version coming soon</h1>
+                                           <ul class="list-unstyled carousel-list">
+                                               <li class="animated bounceInLeft"><i class="fa fa-code"></i><span>Shortcodes For All</span></li>
+                                               <li class="animated bounceInLeft"><i class="fa fa-files-o"></i><span>Page Templates Ready</span></li>
+                                               <li class="animated bounceInLeft"><i class="fa fa-upload"></i><span>Free update for HTML orders</span></li>
+                                           </ul>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-5 col-sm-3 hidden-xs carousel-img-wrap">
+                                    <div class="carousel-img">
+                                        <img src="/assets/pre3.png" alt="pre" class="aligncenter size-full wp-image-72 img-responsive animated bounceInUp">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="home-works">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xs-12">
+                    <h2 class="section-title text-center">Recents works</h2>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <div class="img-caption">
+                      <img width="800" height="533" src="/assets/w1.jpg" class="attachment-, img-responsive wp-post-image" alt="w2">                                                       <div class="caption">
+                        <div class="caption-content">
+                          <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                          <h4>Pretty spring</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <div class="img-caption">
+                      <img width="800" height="533" src="/assets/w2.jpg" class="attachment-, img-responsive wp-post-image" alt="w1">                                                       <div class="caption">
+                        <div class="caption-content">
+                          <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                          <h4>In the Sea</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <div class="img-caption">
+                      <img width="800" height="533" src="/assets/w3.jpg" class="attachment-, img-responsive wp-post-image" alt="w6">                                                       <div class="caption">
+                        <div class="caption-content">
+                          <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                          <h4>Relaxing on the mountain</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <div class="img-caption">
+                      <img width="800" height="533" src="/assets/w1.jpg" class="attachment-, img-responsive wp-post-image" alt="w5">                                                       <div class="caption">
+                        <div class="caption-content">
+                          <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                          <h4>Africa Wild</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <div class="img-caption">
+                      <img width="800" height="533" src="/assets/w2.jpg" class="attachment-, img-responsive wp-post-image" alt="2255332986_c00b655dd0_b">                                <div class="caption">
+                        <div class="caption-content">
+                          <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                          <h4>Maspalomas</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <div class="img-caption">
+                      <img width="800" height="533" src="/assets/w3.jpg" class="attachment-, img-responsive wp-post-image" alt="w3">                                                       <div class="caption">
+                        <div class="caption-content">
+                          <a href="#" class="animated fadeInDown"><i class="fa fa-search"></i>More info</a>
+                          <h4>summery camp</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div> <!-- row -->
+            </div> <!-- container -->
+        </section>
+
+        <footer id="footer">
+            <p>© 2014 <a href="http://www.crystalmuseum.cn">Crystal Museum</a>. All rights reserved.</p>
+        </footer>
+
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 </body>
 </html>
