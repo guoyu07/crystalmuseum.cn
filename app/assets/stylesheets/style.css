@@ -76,6 +76,12 @@ body{font-family:Lato,sans-serif;font-size:14px;line-height:1.6em;background-col
 #product-panel {
   padding-top: 10px;
 }
+
 .product-price {
   color: #B60001;
+  font-weight: 300;
+  font-size: 30px;
+}
+.product-price-range {
+  text-decoration: line-through;
 }
