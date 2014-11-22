@@ -10,27 +10,7 @@
   <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
-
-  <header id="header" class="hidden-xs">
-    <div class="container">
-          <div id="header-title">
-            <h1 class="animated fadeInDown"><a href="http://razonartificial.com/themes/openmind/wordpress"><span>水晶精品</span></a></h1>
-            <p class="animated fadeInLeft">东海水晶甲天下</p>
-          </div>
-          <div id="search-header" class="hidden-xs animated fadeInRight">
-            <form class="navbar-search" method="get" action="#">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="请输入关键词搜索" name="s" id="s">
-                    <span class="input-group-btn">
-                      <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
-                    </span>
-                </div>
-            </form>
-          </div>
-          <div id="toplogo-header"><img src="/assets/top-pic1.jpg"></div>
-      </div>
-  </header>
-
+  <%= render '/common/header' %>
 
   <%= render '/common/navbar' %>
 
