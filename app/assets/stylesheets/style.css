@@ -79,3 +79,8 @@ img.alignleft+p,img.alignright+p{margin-top:0}.p-lg{font-size:1.1em;line-height:
 .product-price-range {
   text-decoration: line-through;
 }
+.panel-header {
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
